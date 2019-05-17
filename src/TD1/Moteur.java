@@ -1,5 +1,7 @@
 package TD1;
 
+import java.security.PublicKey;
+
 public class Moteur {
 
     private char carburant;
@@ -8,6 +10,20 @@ public class Moteur {
     private static final char DIESEL = 'D';
     private static final char ESSENCE = 'E';
     private static final int PUISSANCE_MIN = 600;
+
+    public char getCarburant() {
+        return carburant;
+    }
+
+    public int getPuissance() {
+        return puissance;
+    }
+
+    public void setPuissance(int puissance) {
+        if(puissance > PUISSANCE_MIN){
+            this.puissance = puissance;
+        }
+    }
 
     // constructeur par défaut
     public Moteur() {
@@ -21,15 +37,23 @@ public class Moteur {
         if (carburant == DIESEL) {
             this.carburant = carburant;
         }
-        if (puissance < PUISSANCE_MIN) {
-            this.carburant = carburant;
+        if (puissance > PUISSANCE_MIN) {
+            this.puissance = puissance;
         }
     }
 
     // constructeur par copie
-    public Moteur(Moteur premierMoteur) {
-        this.carburant = premierMoteur.carburant;
-        this.puissance = premierMoteur.puissance;
+
+    /**
+     * constructeur par copie
+     * @param m moteur to copy
+     */
+    public Moteur(Moteur m) {
+        this();
+        if (m != null) {
+            this.carburant = m.carburant;
+            this.puissance = m.puissance;
+        }
     }
 
     @Override
@@ -45,13 +69,15 @@ public class Moteur {
         Moteur ferrari = new Moteur(400, ESSENCE);
         Moteur ferrari2 = new Moteur(ferrari);
         Moteur peugot = new Moteur(1200, Moteur.DIESEL);
+        System.out.println(peugot);
 
+        peugot.setPuissance(400);
         // appelle le constructeur par défaut et renvoie une erreur
         // Moteur m6 = new Moteur(null);
 
-        System.out.println(voitureBanale);
-        System.out.println(ferrari);
-        System.out.println(ferrari2);
-        System.out.println(peugot);
+        System.out.println("voitureBanale" + voitureBanale);
+        System.out.println("Ferrari" + ferrari);
+        System.out.println("Copie de Ferrari" + ferrari2);
+        System.out.println("Peugor" + peugot);
     }
 }
