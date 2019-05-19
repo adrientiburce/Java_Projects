@@ -1,10 +1,10 @@
 package TD1;
 
-public class Voiture {
+abstract class Voiture {
 
-    private static int NUM_VOITURE = 0;
+    private static int numVoiture = 0;
 
-    private int IdPlaque;
+    protected int IdPlaque;
     private String marque;
     private Moteur moteur;
 
@@ -38,10 +38,10 @@ public class Voiture {
      * constructeur par défaut : gestion de l'immatriculation unique
      */
     public Voiture() {
-        this.IdPlaque = NUM_VOITURE;
+        this.IdPlaque = numVoiture;
         this.marque = "DEFAULT";
         this.driver = null;
-        NUM_VOITURE++;
+        numVoiture++;
     }
 
     public Voiture(String marque) {
@@ -97,16 +97,6 @@ public class Voiture {
     }
 
     public static void main(String[] args) {
-        Moteur m1 = new Moteur(null);
-        Moteur m2 = new Moteur(1000, 'E');
-        Voiture v1 = new Voiture(null, m1);
-        Voiture v2 = new Voiture("Ferrari", m2);
-        Voiture v3 = new Voiture("Ferrari", m2);
-        System.out.println("v1 : " + v1);
-        System.out.println("v2 : " + v2);
-        System.out.println("v3 : " + v3);
-        m2.setPuissance(1200);
-        System.out.println("v2 : " + v2);
-        System.out.println("v3 : " + v3);
+
     }
 }

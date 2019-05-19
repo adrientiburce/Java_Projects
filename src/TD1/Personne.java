@@ -1,17 +1,17 @@
 package TD1;
 
-public class Personne {
+public abstract class Personne {
 
     private static int lastId = 0;
     private int Id;
     private String firstName;
     private String lastName;
     private String address;
-
     /**
      * La voiture de la personne, par défaut null
      */
     private Voiture voiture = null;
+
 
     public String getFirstName() {
         return firstName;
@@ -25,14 +25,8 @@ public class Personne {
         return address;
     }
 
-    public void setAddress(String address) {
-        if (address != null) {
-            this.address = address;
-        }
-    }
-
-    public Voiture getVoiture() {
-        return new Voiture(voiture);
+    public int getId() {
+        return Id;
     }
 
     /**
@@ -70,16 +64,22 @@ public class Personne {
         }
     }
 
+    private void setAddress(String address) {
+        if (address != null) {
+            this.address = address;
+        }
+    }
+
     public boolean estPieton() {
         return (this.voiture == null);
     }
 
     /**
      * @param v la voiture a conduire
-     * @return affectation ou non de la voiture
+     * @return affectation ou non de la voiture en fonction de la personne (pieton et fonction) et de la dispo
      */
     public boolean affecter(Voiture v) {
-        if (v != null && this.estPieton() && v.estDisponible()) {
+        if (v != null && this.estPieton() && v.estDisponible() && this.estCompatible(v)) {
             this.voiture = v;
             v.setConducteur(this);
             return true;
@@ -105,6 +105,11 @@ public class Personne {
         return -1;
     }
 
+    /**
+     * @return si la personne peut conduire la voiture
+     */
+    abstract public boolean estCompatible(Voiture v);
+
     @Override
     public String toString() {
         return "Personne{" +
@@ -116,17 +121,4 @@ public class Personne {
                 '}';
     }
 
-    public static void main(String[] args) {
-        Personne p1 = new Personne("Adrien", "Tiburce", "22 rue des cotes");
-        Voiture vNull = null;
-        Voiture v1 = new Voiture();
-        Voiture v2 = new Voiture();
-        System.out.println(p1.estPieton());
-        System.out.printf("=========\n");
-        System.out.println(v1);
-        System.out.println(p1.affecter(v1));
-        System.out.println(p1.retirerVoiture());
-        System.out.println(p1.affecter(v2));
-
-    }
 }
