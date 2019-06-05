@@ -1,7 +1,6 @@
 package TD3.reseau;
 
 import java.util.Objects;
-import java.util.Set;
 
 public class Route {
 
@@ -62,15 +61,13 @@ public class Route {
     }
 
     public static void main(String[] args) {
-        Point origine = new Point(10, 9.5);
+        /*oint origine = new Point(10, 9.5);
         Point dest = new Point(2, -6);
 
         Route route1 = new Route(origine, dest);
         Route route2 = new Route(origine, dest);
         //System.out.println(route.getDistance());
-        System.out.println(route1.equals(route2));
-
-
+        System.out.println(route1.equals(route2));*/
     }
 }
 

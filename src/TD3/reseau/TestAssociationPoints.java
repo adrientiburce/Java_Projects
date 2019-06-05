@@ -5,13 +5,7 @@
  */
 package TD3.reseau;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Cette classe de test permet de tester l'association entre des points
@@ -124,5 +118,6 @@ public class TestAssociationPoints {
             points.add(p);
         }
         return points;
+        //return null;
     }
 }
