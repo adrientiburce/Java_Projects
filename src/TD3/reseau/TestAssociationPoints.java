@@ -111,13 +111,13 @@ public class TestAssociationPoints {
      * @return une liste de nbPoints points
      */
     private static List<Point> genererPointsAlea(int nbPoints) {
-        List<Point> points = new ArrayList<>();
+        /*List<Point> points = new ArrayList<>();
         Random rand = new Random(0);
         for(int i=0; i<nbPoints; i++) {
             Point p = new Point(rand.nextDouble(), rand.nextDouble());
             points.add(p);
         }
-        return points;
-        //return null;
+        return points;*/
+        return null;
     }
 }

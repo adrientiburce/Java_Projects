@@ -86,7 +86,7 @@ public class Tournee {
     }
 
     public static void main(String[] args) {
-        Depot d1 = new Depot(0, 0);
+        /*Depot d1 = new Depot(0, 0);
         Client c1 = new Client(5, 5, 10);
         Client c2 = new Client(-5, 5, 10);
         Client c3 = new Client(-5, -5, 10);
@@ -110,6 +110,6 @@ public class Tournee {
 
         Tournee t = new Tournee(d1, 50);
         System.out.println("Ajout de tous les clients : " + t.ajouterClient(ensClient));
-        System.out.println(t);
+        System.out.println(t);*/
     }
 }

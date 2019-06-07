@@ -2,7 +2,7 @@ package TD3.reseau;
 
 import java.util.*;
 
-public class Point {
+public abstract class Point {
 
     private int id;
     private double abscisse;
@@ -39,7 +39,7 @@ public class Point {
      *
      * @param mesDestinations ensemble des points joignables
      */
-    public void ajouterRoutes(Set<Point> mesDestinations) {
+    public void ajouterRoutes(Set<Client> mesDestinations) {
         for (Point pointDestination : mesDestinations) {
             Route maRoute = new Route(this, pointDestination);
             this.mesRoutes.put(pointDestination, maRoute);  // avec HashMap<> vérifie l'unicité

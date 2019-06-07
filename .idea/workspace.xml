@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05793ee4-a668-44db-b912-d84de2bf3d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TD3/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TD3/planning/Planning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TD3/planning/Tournee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TD3/reseau/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TD3/reseau/Depot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TD3/planification/Routage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO_School_Projects/TD3/reseau/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO_School_Projects/TD3/reseau/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO_School_Projects/TD3/reseau/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO_School_Projects/TD3/reseau/Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO_School_Projects/TD3/reseau/Route.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO_School_Projects/TD3/reseau/TestAssociationPoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO_School_Projects/TD3/reseau/TestAssociationPoints.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TD3/planning/Planning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TD3/planning/Planning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TD3/planning/Tournee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TD3/planning/Tournee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TD3/reseau/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TD3/reseau/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TD3/reseau/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TD3/reseau/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TD3/reseau/Route.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TD3/reseau/TestAssociationPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TD3/reseau/TestAssociationPoints.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,52 +23,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TD3/reseau/TestAssociationPoints.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2360">
-              <caret line="122" column="1" lean-forward="true" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TD3/reseau/Route.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-              <folding>
-                <element signature="e#1053#1054#0" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="e#1120#1121#0" expanded="true" />
-                <element signature="e#1154#1155#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TD3/reseau/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="920">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding>
-                <element signature="e#1569#1570#0" expanded="true" />
-                <element signature="e#1613#1614#0" expanded="true" />
-                <element signature="e#1882#1883#0" expanded="true" />
-                <element signature="e#1906#1907#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TD3/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="402">
-                <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/TD3/reseau/Depot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,21 +54,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TD3/planning/Planning.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="1100">
+              <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TD2/atelier/Atelier.java">
+        <entry file="file://$PROJECT_DIR$/src/TD3/planification/Routage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="854">
-              <caret line="130" column="26" lean-forward="true" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
+            <state relative-caret-position="367">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1836#1837#0" expanded="true" />
-                <element signature="e#1883#1884#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="240">
+                <caret line="12" column="46" lean-forward="true" selection-end-line="67" selection-end-column="46" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TD3/planning/Tournee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1940">
+              <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,19 +148,21 @@
         <option value="$PROJECT_DIR$/src/TD3/reseau/Tournee.java" />
         <option value="$PROJECT_DIR$/src/TD3/reseau/planning/Tournee.java" />
         <option value="$PROJECT_DIR$/src/TD3/reseau/Depot.java" />
-        <option value="$PROJECT_DIR$/src/TD3/reseau/Client.java" />
-        <option value="$PROJECT_DIR$/src/TD3/planning/Tournee.java" />
-        <option value="$PROJECT_DIR$/src/TD3/planning/Planning.java" />
         <option value="$PROJECT_DIR$/src/TD3/Readme.md" />
         <option value="$PROJECT_DIR$/src/TD3/reseau/TestAssociationPoints.java" />
+        <option value="$PROJECT_DIR$/src/TD3/reseau/Client.java" />
+        <option value="$PROJECT_DIR$/src/TD3/planning/Planning.java" />
         <option value="$PROJECT_DIR$/src/TD3/reseau/Point.java" />
+        <option value="$PROJECT_DIR$/src/TD3/planning/Tournee.java" />
+        <option value="$PROJECT_DIR$/src/TD3/planification/Routage.java" />
+        <option value="$PROJECT_DIR$/src/test.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="173" />
+    <option name="x" value="133" />
     <option name="y" value="23" />
-    <option name="width" value="1267" />
+    <option name="width" value="1307" />
     <option name="height" value="824" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -175,6 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -188,31 +187,10 @@
               <item name="POO_School_Projects" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="POO_School_Projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POO_School_Projects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="TD3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="POO_School_Projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POO_School_Projects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="TD3" type="462c0819:PsiDirectoryNode" />
-              <item name="planning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="POO_School_Projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="POO_School_Projects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="TD3" type="462c0819:PsiDirectoryNode" />
-              <item name="reseau" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,17 +265,17 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="173" y="23" width="1267" height="824" extended-state="0" />
+    <frame x="80" y="23" width="1360" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Learn" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49705306" visible="true" weight="0.21959184" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49705306" weight="0.22285715" />
       <window_info id="Favorites" order="3" sideWeight="0.502947" side_tool="true" weight="0.18316373" />
       <window_info id="Structure" order="4" sideWeight="0.50098234" side_tool="true" weight="0.3293247" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329235" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27459016" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27459016" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39972714" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -317,12 +295,12 @@
     <layout-to-restore>
       <window_info id="Designer" order="0" />
       <window_info id="Learn" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49705306" visible="true" weight="0.18700615" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49705306" visible="true" weight="0.22285715" />
       <window_info id="Favorites" order="3" sideWeight="0.502947" side_tool="true" weight="0.18316373" />
       <window_info id="Structure" order="4" sideWeight="0.50098234" side_tool="true" weight="0.3293247" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329235" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27459016" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39972714" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,15 +437,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TD3/reseau/Depot.java">
+    <entry file="file://$PROJECT_DIR$/src/TD3/reseau/Route.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="800">
+          <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TD3/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="402">
+            <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TD3/reseau/TestAssociationPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -485,77 +481,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TD3/reseau/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="336">
+          <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TD3/planning/Planning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TD3/planning/Tournee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-562">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TD3/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="402">
-            <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TD3/reseau/TestAssociationPoints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2360">
-          <caret line="122" column="1" lean-forward="true" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TD3/reseau/Route.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-          <folding>
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1154#1155#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TD3/reseau/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="920">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
-            <element signature="e#1569#1570#0" expanded="true" />
-            <element signature="e#1613#1614#0" expanded="true" />
-            <element signature="e#1882#1883#0" expanded="true" />
-            <element signature="e#1906#1907#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TD3/reseau/Depot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TD3/planning/Planning.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TD3/planning/Tournee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1940">
+          <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TD3/planification/Routage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="240">
+            <caret line="12" column="46" lean-forward="true" selection-end-line="67" selection-end-column="46" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
