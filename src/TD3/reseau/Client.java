@@ -1,5 +1,7 @@
 package TD3.reseau;
 
+import TD3.mesExceptions.ErrQuantite;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,9 +14,13 @@ public class Client extends Point {
         this.quantite = 0;
     }
 
-    public Client(double abscisse, double ordonne, int quantite) {
+    public Client(double abscisse, double ordonne, int quantite)throws ErrQuantite {
         super(abscisse, ordonne);
-        this.quantite = quantite;
+        if (this.quantite >= 0) {
+            this.quantite = quantite;
+        } else {
+            throw new ErrQuantite();
+        }
     }
 
     public int getQuantite() {
@@ -30,18 +36,14 @@ public class Client extends Point {
     }
 
     public static void main(String[] args) {
-        Client c1 = new Client(5, 5, 10);
-        Client c2 = new Client(-5, 5, 10);
-        Client c3 = new Client(-5,-5, 10);
-        Client c4 = new Client(5,-5, 10);
-        Set<Point> mesClients = new HashSet<>();
-        mesClients.add(c2);
-        mesClients.add(c3);
-        mesClients.add(c4);
-        c1.ajouterRoutes(mesClients);
-        System.out.println(c1);
-        System.out.println(c2);
-        System.out.println(c3);
-        System.out.println(c4);
+        try {
+            Client c1 = new Client(5, 5, 10);
+            System.out.println("Creation ok");
+            Client c2 = new Client(5, -5, 0); System.out.println("Creation ok");
+        } catch (ErrQuantite ex) {
+            System.out.println("Erreur: quantité negative");
+            System.exit(-1);
+
+        }
     }
 }

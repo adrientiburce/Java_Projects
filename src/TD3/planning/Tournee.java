@@ -14,7 +14,6 @@ public class Tournee {
     private int quantiteLivre;
     private double distance;
     private int capaciteMax;
-
     /**
      * ArrayList pour accéder facilement aux clients
      */
@@ -46,11 +45,11 @@ public class Tournee {
      */
     public boolean ajouterClient(Client client) {
         System.out.println(client);
-        int isNewQuantiteLivre = this.quantiteLivre + client.getQuantite();
-        if (this.capaciteMax < isNewQuantiteLivre) {
+        int newQuantiteLivre = this.quantiteLivre + client.getQuantite();
+        if (this.capaciteMax < newQuantiteLivre) {
             return false;
         } else {
-            this.quantiteLivre = isNewQuantiteLivre;
+            this.quantiteLivre = newQuantiteLivre;
             this.mesClients.add(client);
             // maj de la distance
             // un seul client
@@ -58,6 +57,9 @@ public class Tournee {
                 this.distance = 2 * client.getDistance(depot);
             } else {
                 this.distance -= this.mesClients.get(mesClients.size() - 2).getDistance(depot);
+                //distance entres les 2 clients
+                this.distance += this.mesClients.get(mesClients.size() - 2).getDistance(client);
+                // distance entre le nouveau client et le depot
                 this.distance += client.getDistance(depot);
             }
 

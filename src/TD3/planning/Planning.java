@@ -2,7 +2,6 @@ package TD3.planning;
 
 import TD3.reseau.Client;
 import TD3.reseau.Depot;
-import TD3.reseau.Point;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -18,29 +17,13 @@ public class Planning {
     /**
      * capacites des camions : la meme pour tous
      */
-    private final int CAPACITE = 40;
+    private static int capacite;
 
     public Planning(int capacite) {
-        //this.CAPACITE = capacite;
+        this.capacite = capacite;
         this.lesTournees = new HashSet<>();
         this.distanceTotale = 0;
         this.quantiteTotale = 0;
-    }
-
-    public int getDistanceTotale() {
-        return distanceTotale;
-    }
-
-    public void setDistanceTotale(int distanceTotale) {
-        this.distanceTotale = distanceTotale;
-    }
-
-    public int getQuantiteTotale() {
-        return quantiteTotale;
-    }
-
-    public void setQuantiteTotale(int quantiteTotale) {
-        this.quantiteTotale = quantiteTotale;
     }
 
     private boolean ajouterTournee(Tournee t) {
@@ -55,14 +38,14 @@ public class Planning {
     @Override
     public String toString() {
         return "Planning{" +
-                "lesTournees=" + lesTournees +
+                "nombre de Tournees=" + lesTournees.size() +
                 ", distanceTotale=" + distanceTotale +
                 ", quantiteTotale=" + quantiteTotale +
                 '}';
     }
 
     public void planificationBasique(Depot depot, Set<Client> clients) {
-        Tournee tourneeCourante = new Tournee(depot, CAPACITE);
+        Tournee tourneeCourante = new Tournee(depot, capacite);
         for (Client client : clients) {
             // si on ne peut plus ajouter de clients
             boolean isClientAdded = tourneeCourante.ajouterClient(client);
@@ -70,8 +53,10 @@ public class Planning {
                 // on ajoute la tournee courante au planning
                 this.ajouterTournee(tourneeCourante);
                 // on crée une nouvelle tournée
-                tourneeCourante = new Tournee(depot, CAPACITE);
+                tourneeCourante = new Tournee(depot, capacite);
+                tourneeCourante.ajouterClient(client);
             }
+            System.out.println("distance tournee : "+ tourneeCourante.getDistance());
         }
         this.ajouterTournee(tourneeCourante);
     }

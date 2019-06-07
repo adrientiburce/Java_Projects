@@ -1,10 +1,12 @@
 package TD3.planification;
 
+import TD3.mesExceptions.ErrQuantite;
 import TD3.planning.Planning;
 import TD3.reseau.Client;
 import TD3.reseau.Depot;
 import TD3.reseau.Point;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Routage {
@@ -15,6 +17,8 @@ public class Routage {
 
     public Routage(int capacite) {
         this.capacite = capacite;
+        this.mesClients = new HashSet<>();
+        this.planning = new Planning(capacite);
         this.depot = new Depot(0, 0);
     }
 
@@ -25,7 +29,17 @@ public class Routage {
 
     private void initialiserRoutes(){
         // ajoute toutes les routes au depot (du depot à l'ensemble des clients)
-        depot.ajouterRoutes(mesClients);
+        Set<Point> points = new HashSet<>();
+        // necessaire car ajouterRoutes prend Points
+        points.add(depot);
+        for(Client c : mesClients){
+            points.add(c);
+        }
+        depot.ajouterRoutes(points);
+        for(Client c : mesClients){
+            c.ajouterRoutes(points);
+        }
+
     }
 
     public void planificationBasique(){
@@ -33,19 +47,30 @@ public class Routage {
     }
 
     public static void test(){
+        Routage routage = new Routage(50);
+        // definit 10 clients
+        try {
+            routage.creationClientsTest1();
+        }catch(ErrQuantite ex){
+            System.out.println("Attention : quantité négative");
+        }
+        routage.initialiserRoutes();
+        routage.planificationBasique();
 
+        // affiche le resultat
+        System.out.println(routage);
     }
 
-    private void creationClientsTest1() {
-        Client c0 = new Client(99.7497, 12.7171, 4);
+    private void creationClientsTest1()throws ErrQuantite {
+        Client c0 = new Client(-99.7497, 12.7171, 4);
         Client c1 = new Client(61.7481, 17.0019, 10);
-        Client c2 = new Client(29.9417, 79.1925, 17);
-        Client c3 = new Client(49.321, 65.1784, 18);
+        Client c2 = new Client(-29.9417, 79.1925, 17);
+        Client c3 = new Client(49.321, -65.1784, 18);
         Client c4 = new Client(42.1003, 2.70699, 7);
-        Client c5 = new Client(97.0031, 81.7194, 8);
-        Client c6 = new Client(70.5374, 66.8203, 20);
-        Client c7 = new Client(10.8615, 76.1834, 1);
-        Client c8 = new Client(98.2177, 24.424, 11);
+        Client c5 = new Client(-97.0031, -81.7194, 8);
+        Client c6 = new Client(-70.5374, -66.8203, 20);
+        Client c7 = new Client(-10.8615, -76.1834, 1);
+        Client c8 = new Client(-98.2177, -24.424, 11);
         Client c9 = new Client(14.2369, 20.3528, 13);
         mesClients.clear();
         mesClients.add(c0);
@@ -58,5 +83,17 @@ public class Routage {
         mesClients.add(c7);
         mesClients.add(c8);
         mesClients.add(c9);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Routage{" +
+                "planning=" + planning +
+                '}';
+    }
+
+    public static void main(String[] args) {
+        test();
     }
 }

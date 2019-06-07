@@ -39,7 +39,7 @@ public abstract class Point {
      *
      * @param mesDestinations ensemble des points joignables
      */
-    public void ajouterRoutes(Set<Client> mesDestinations) {
+    public void ajouterRoutes(Set<Point> mesDestinations) {
         for (Point pointDestination : mesDestinations) {
             Route maRoute = new Route(this, pointDestination);
             this.mesRoutes.put(pointDestination, maRoute);  // avec HashMap<> vérifie l'unicité
