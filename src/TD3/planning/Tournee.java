@@ -38,10 +38,10 @@ public class Tournee {
     }
 
     /**
-     * ajoute un client a la tourné en mettant a jour la quantité livré et la distance
+     * ajoute un book a la tourné en mettant a jour la quantité livré et la distance
      *
      * @param client
-     * @return boolean : si le client peur etre ajoute
+     * @return boolean : si le book peur etre ajoute
      */
     public boolean ajouterClient(Client client) {
         System.out.println(client);
@@ -52,14 +52,14 @@ public class Tournee {
             this.quantiteLivre = newQuantiteLivre;
             this.mesClients.add(client);
             // maj de la distance
-            // un seul client
+            // un seul book
             if (mesClients.size() == 1) {
                 this.distance = 2 * client.getDistance(depot);
             } else {
                 this.distance -= this.mesClients.get(mesClients.size() - 2).getDistance(depot);
                 //distance entres les 2 clients
                 this.distance += this.mesClients.get(mesClients.size() - 2).getDistance(client);
-                // distance entre le nouveau client et le depot
+                // distance entre le nouveau book et le depot
                 this.distance += client.getDistance(depot);
             }
 

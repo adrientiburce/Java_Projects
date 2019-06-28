@@ -14,12 +14,12 @@ public class Client extends Point {
         this.quantite = 0;
     }
 
-    public Client(double abscisse, double ordonne, int quantite)throws ErrQuantite {
+    public Client(double abscisse, double ordonne, int quantite) throws ErrQuantite {
         super(abscisse, ordonne);
-        if (this.quantite >= 0) {
-            this.quantite = quantite;
-        } else {
+        if (this.quantite < 0) {
             throw new ErrQuantite();
+        } else {
+            this.quantite = quantite;
         }
     }
 
@@ -39,11 +39,11 @@ public class Client extends Point {
         try {
             Client c1 = new Client(5, 5, 10);
             System.out.println("Creation ok");
-            Client c2 = new Client(5, -5, 0); System.out.println("Creation ok");
+            Client c2 = new Client(5, -5, -10);
+            System.out.println("Creation ok");
         } catch (ErrQuantite ex) {
             System.out.println("Erreur: quantité negative");
             System.exit(-1);
-
         }
     }
 }
